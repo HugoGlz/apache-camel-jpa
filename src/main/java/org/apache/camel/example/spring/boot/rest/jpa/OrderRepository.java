@@ -17,6 +17,8 @@
 package org.apache.camel.example.spring.boot.rest.jpa;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Component;
 
+@Component
 public interface OrderRepository extends JpaRepository<Order, Integer> {
 }
