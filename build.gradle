@@ -3,7 +3,7 @@ buildscript{
 		mavenCentral()
 	}
 	 dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.3.RELEASE")
     }
 }
 
@@ -20,11 +20,10 @@ targetCompatibility = 1.8
 
 dependencies {
     compile 'org.apache.camel:camel-spring-boot-starter:2.19.0'
-    compile 'org.apache.camel:camel-servlet:2.19.0'
+    compile 'org.apache.camel:camel-servlet-starter:2.19.0'
     compile 'org.apache.camel:camel-jackson:2.19.0'
     compile 'org.apache.camel:camel-swagger-java:2.19.0'
     compile 'org.apache.camel:camel-jpa:2.19.0'
-    compile 'org.apache.camel:camel-parent:2.19.0'
     compile 'org.apache.camel:camel-csv:2.14.0'
 	compile 'org.apache.camel:camel-bindy:2.19.0'
 	compile 'org.apache.camel:camel-core:2.19.0'
